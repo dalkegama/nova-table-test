@@ -21,6 +21,11 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules"
+              ]
+            },
             "tsConfig": "tsconfig.app.json",
             "aot": true,
             "assets": [
@@ -28,7 +33,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.less"
+              "src/styles.less",
+              "./node_modules/@nova-ui/bits/bundles/css/styles.css"
             ],
             "scripts": []
           },
