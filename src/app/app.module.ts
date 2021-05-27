@@ -20,6 +20,7 @@ import {
   NuiSpinnerModule, NuiTableModule
 } from "@nova-ui/bits";
 import { AppComponent } from './app.component';
+import { TableCellComponent } from './table-cell/table-cell.component';
 
 
 @NgModule({
@@ -44,9 +45,10 @@ import { AppComponent } from './app.component';
     NuiPopoverModule,
     HttpClientModule
   ],
-    declarations: [
-    AppComponent
-  ],
+    declarations: [	
+    AppComponent,
+      TableCellComponent
+   ],
   providers: [
     {provide: TRANSLATIONS_FORMAT, useValue: "xlf"},
   
